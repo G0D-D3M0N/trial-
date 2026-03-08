@@ -627,9 +627,9 @@ document.addEventListener('keydown', (e) => {
 // ==========================================
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
-        document.title = '[ PAUSED ] 4ever-Rooted';
+        document.title = '[ PAUSED ] Portfolio:)';
     } else {
-        document.title = '4ever-Rooted | G0D-D3M0N';
+        document.title = 'Portfolio | G0D-D3M0N';
     }
 });
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>4ever-Rooted | G0D-D3M0N</title>
+    <title>Portfolio | T1M3P4SS</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Fira+Code:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -16,7 +16,7 @@
             <div class="loader-bar">
                 <div class="loader-fill"></div>
             </div>
-            <p class="loader-text">INITIALIZING SYSTEM...</p>
+            <p class="loader-text">SEARCHING THE UNIVERSE...</p>
             <div class="loader-logs" id="loaderLogs"></div>
         </div>
     </div>
@@ -37,7 +37,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-brand">
             <span class="brand-bracket">[</span>
-            <span class="brand-text">G0D-D3M0N</span>
+            <span class="brand-text">T1M3P4SS</span>
             <span class="brand-bracket">]</span>
             <span class="brand-cursor">_</span>
         </div>
@@ -62,16 +62,17 @@
     <section id="home" class="section hero-section">
         <div class="hero-content">
             <div class="glitch-container">
-                <h1 class="glitch" data-text="4EVER-ROOTED">4EVER-ROOTED</h1>
+                <h1 class="glitch" data-text="Hi, I am">Hi, I am</h1>
+                <h2 class="glitch" data-text="Shyam Bharadwaj">Shyam Bharadwaj</h2>
             </div>
             <div class="hero-subtitle">
-                <span class="typed-prefix">root@system:~$ </span>
+                <span class="typed-prefix">Goals@system:~$ </span>
                 <span class="typed-text" id="typedText"></span>
                 <span class="typed-cursor">▊</span>
             </div>
             <div class="hero-description">
-                <p>> Ethical Hacker | Security Researcher | Code Architect</p>
-                <p>> Exploring the depths of cyberspace since <span class="highlight">2020</span></p>
+                <p>> Ethical Hacker | Web Developer | Tech Enthusiast</p>
+                <p>> Exploring the depths of cyberspace....</p>
             </div>
             <div class="hero-buttons">
                 <a href="#about" class="btn btn-primary">
@@ -85,18 +86,19 @@
             </div>
             <div class="hero-stats">
                 <div class="stat-item">
-                    <span class="stat-value" data-count="500">0</span>
-                    <span class="stat-label">EXPLOITS</span>
+                    <span class="stat-value" data-count="4">0</span>
+                    <p class="stat-label">HACKATHONS </p>
+                    <p class="stat-label">WINNER</p>
                 </div>
                 <div class="stat-item">
-                    <span class="stat-value" data-count="150">0</span>
-                    <span class="stat-label">PROJECTS</span>
+                    <span class="stat-value" data-count="7">0</span>
+                    <p class="stat-label">SITES BUILT</p>
                 </div>
                 <div class="stat-item">
                     <span class="stat-value" data-count="99">0</span>
-                    <span class="stat-label">CTF WINS</span>
+                    <span class="stat-label">SITES EXPLORED..</span>
                 </div>
-            </div>
+             </div>
         </div>
         <div class="scroll-indicator">
             <div class="mouse">
@@ -105,6 +107,47 @@
             <span>SCROLL DOWN</span>
         </div>
     </section>
+
+     <!-- Interactive Terminal Section -->
+    <section id="terminal" class="section terminal-section">
+        <div class="section-header">
+            <span class="section-tag">&lt;terminal&gt;</span>
+            <h2 class="section-title">LIVE<span class="accent">.TERMINAL</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="interactive-terminal">
+            <div class="terminal-window large">
+                <div class="terminal-header">
+                    <div class="terminal-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="terminal-title">root@4ever-rooted:~</span>
+                    <div class="terminal-controls">
+                        <span class="terminal-minimize">─</span>
+                        <span class="terminal-maximize">□</span>
+                        <span class="terminal-close">×</span>
+                    </div>
+                </div>
+                <div class="terminal-body interactive" id="terminalBody">
+                    <div id="terminalOutput">
+                        <p class="output system-msg">
+                            ╔══════════════════════════════════════════════════╗<br>
+                            ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4EVER-ROOTED INTERACTIVE TERMINAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║<br>
+                            ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type 'help' for available commands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║<br>
+                            ╚══════════════════════════════════════════════════╝
+                        </p>
+                    </div>
+                    <div class="terminal-input-line">
+                        <span class="prompt">root@4ever-rooted:~$</span>
+                        <input type="text" id="terminalInput" class="terminal-input" autofocus autocomplete="off" spellcheck="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- About Section -->
     <section id="about" class="section about-section">
@@ -118,13 +161,19 @@
                 <div class="image-frame">
                     <div class="image-placeholder">
                         <div class="ascii-art">
-    ██████╗  ██████╗ ██████╗
-   ██╔════╝ ██╔═══██╗██╔══██╗
-   ██║  ███╗██║   ██║██║  ██║
-   ██║   ██║██║   ██║██║  ██║
-   ╚██████╔╝╚██████╔╝██████╔╝
-    ╚═════╝  ╚═════╝ ╚═════╝
-        D3M0N
+████████╗██╗███╗   ███╗███████╗
+╚══██╔══╝██║████╗ ████║██╔════╝
+   ██║   ██║██╔████╔██║█████╗  
+   ██║   ██║██║╚██╔╝██║██╔══╝  
+   ██║   ██║██║ ╚═╝ ██║███████╗
+   ╚═╝   ╚═╝╚═╝     ╚═╝╚══════╝
+
+██████╗  █████╗ ███████╗███████╗
+██╔══██╗██╔══██╗██╔════╝██╔════╝
+██████╔╝███████║███████╗███████╗
+██╔═══╝ ██╔══██║╚════██║╚════██║
+██║     ██║  ██║███████║███████║
+╚═╝     ╚═╝  ╚═╝╚══════╝╚══════╝
                         </div>
                     </div>
                     <div class="image-border"></div>
@@ -217,14 +266,7 @@
                 <div class="skill-bars">
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>Python</span>
-                            <span class="skill-percent">95%</span>
-                        </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
-                    </div>
-                    <div class="skill-item">
-                        <div class="skill-info">
-                            <span>C / C++</span>
+                            <span>Vibecoding</span>
                             <span class="skill-percent">80%</span>
                         </div>
                         <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
@@ -238,14 +280,21 @@
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
-                            <span>JavaScript</span>
+                            <span>Web development</span>
                             <span class="skill-percent">75%</span>
                         </div>
                         <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
                     </div>
+                     <div class="skill-item">
+                        <div class="skill-info">
+                            <span>Game development</span>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+                    </div>
                 </div>
             </div>
-            <div class="skills-category">
+           <div class="skills-category" style="opacity: 1; transform: translateY(0px); transition: 0.6s;">
                 <h3 class="category-title"><i class="fas fa-network-wired"></i> NETWORKING</h3>
                 <div class="skill-bars">
                     <div class="skill-item">
@@ -253,28 +302,28 @@
                             <span>Network Security</span>
                             <span class="skill-percent">93%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="93"></div></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="93" style="width: 93%;"></div></div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>Wireless Hacking</span>
                             <span class="skill-percent">88%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="88" style="width: 88%;"></div></div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>OSINT</span>
                             <span class="skill-percent">90%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="90" style="width: 90%;"></div></div>
                     </div>
                     <div class="skill-item">
                         <div class="skill-info">
                             <span>Cryptography</span>
                             <span class="skill-percent">82%</span>
                         </div>
-                        <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+                        <div class="skill-bar"><div class="skill-fill" data-width="82" style="width: 82%;"></div></div>
                     </div>
                 </div>
             </div>
@@ -292,8 +341,11 @@
                 <div class="tool-item" data-tooltip="Aircrack-ng">📶</div>
                 <div class="tool-item" data-tooltip="Hashcat">🐱</div>
                 <div class="tool-item" data-tooltip="SQLMap">💉</div>
-                <div class="tool-item" data-tooltip="Hydra">🐍</div>
+                <div class="tool-item" data-tooltip="Hydra">🐲</div>
                 <div class="tool-item" data-tooltip="IDA Pro">🔬</div>
+                <div class="tool-item" data-tooltip="Python">🐍</div>
+                <div class="tool-item" data-tooltip="coding">💻</div>
+                <div class="tool-item" data-tooltip="AI">🤖</div>
             </div>
         </div>
     </section>
@@ -308,27 +360,24 @@
         <div class="projects-grid">
             <div class="project-card" data-aos="fade-up">
                 <div class="card-header">
-                    <div class="card-icon"><i class="fas fa-spider"></i></div>
+                    <div class="card-icon"><i class="fab fa-spider"></i></div>
                     <div class="card-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        <a href="https://github.com/G0D-D3M0N"><i class="fab fa-github"></i></a>
+                        <a href="https://sanket-eight.vercel.app/"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
-                <h3 class="card-title">ShadowCrawler</h3>
-                <p class="card-description">Advanced web vulnerability scanner with AI-powered exploit detection and automated reporting engine.</p>
+                <h3 class="card-title">Sanket</h3>
+                <a href="https://sanket-eight.vercel.app/"></a>
+                <p class="card-description">An AI/ML driven , Smart Women safety web application with intigrated smart and safer route marking map .  </p>
                 <div class="card-tags">
-                    <span>Python</span><span>ML</span><span>Security</span>
-                </div>
-                <div class="card-stats">
-                    <span><i class="fas fa-star"></i> 342</span>
-                    <span><i class="fas fa-code-fork"></i> 89</span>
+                    <span>Full Stack</span><span>AI/ML</span><span>Leaflet/google maps</span>
                 </div>
             </div>
             <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                 <div class="card-header">
                     <div class="card-icon"><i class="fas fa-ghost"></i></div>
                     <div class="card-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                         <a href="https://github.com/G0D-D3M0N"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -346,7 +395,7 @@
                 <div class="card-header">
                     <div class="card-icon"><i class="fas fa-virus"></i></div>
                     <div class="card-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                         <a href="https://github.com/G0D-D3M0N"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -364,7 +413,7 @@
                 <div class="card-header">
                     <div class="card-icon"><i class="fas fa-lock"></i></div>
                     <div class="card-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                         <a href="https://github.com/G0D-D3M0N"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -382,7 +431,7 @@
                 <div class="card-header">
                     <div class="card-icon"><i class="fas fa-satellite-dish"></i></div>
                     <div class="card-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                         <a href="https://github.com/G0D-D3M0N"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -400,7 +449,7 @@
                 <div class="card-header">
                     <div class="card-icon"><i class="fas fa-user-secret"></i></div>
                     <div class="card-links">
-                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="https://github.com/G0D-D3M0N"><i class="fab fa-github"></i></a>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -416,47 +465,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Interactive Terminal Section -->
-    <section id="terminal" class="section terminal-section">
-        <div class="section-header">
-            <span class="section-tag">&lt;terminal&gt;</span>
-            <h2 class="section-title">LIVE<span class="accent">.TERMINAL</span></h2>
-            <div class="section-line"></div>
-        </div>
-        <div class="interactive-terminal">
-            <div class="terminal-window large">
-                <div class="terminal-header">
-                    <div class="terminal-dots">
-                        <span class="dot red"></span>
-                        <span class="dot yellow"></span>
-                        <span class="dot green"></span>
-                    </div>
-                    <span class="terminal-title">root@4ever-rooted:~</span>
-                    <div class="terminal-controls">
-                        <span class="terminal-minimize">─</span>
-                        <span class="terminal-maximize">□</span>
-                        <span class="terminal-close">×</span>
-                    </div>
-                </div>
-                <div class="terminal-body interactive" id="terminalBody">
-                    <div id="terminalOutput">
-                        <p class="output system-msg">
-                            ╔══════════════════════════════════════════════════╗<br>
-                            ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4EVER-ROOTED INTERACTIVE TERMINAL&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║<br>
-                            ║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type 'help' for available commands&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;║<br>
-                            ╚══════════════════════════════════════════════════╝
-                        </p>
-                    </div>
-                    <div class="terminal-input-line">
-                        <span class="prompt">root@4ever-rooted:~$</span>
-                        <input type="text" id="terminalInput" class="terminal-input" autofocus autocomplete="off" spellcheck="false">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
         <div class="section-header">
@@ -471,7 +479,7 @@
                 <div class="contact-methods">
                     <div class="contact-method">
                         <i class="fas fa-envelope"></i>
-                        <span>g0d.d3m0n@protonmail.com</span>
+                        <span>bharadshyam456@gmail.com</span>
                     </div>
                     <div class="contact-method">
                         <i class="fas fa-map-marker-alt"></i>
@@ -483,7 +491,7 @@
                     </div>
                 </div>
                 <div class="social-links">
-                    <a href="#" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/G0D-D3M0N" class="social-link" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
                     <a href="#" class="social-link" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-link" data-tooltip="Discord"><i class="fab fa-discord"></i></a>
                     <a href="#" class="social-link" data-tooltip="Telegram"><i class="fab fa-telegram"></i></a>
