@@ -6,6 +6,13 @@
 // ==========================================
 // PRELOADER
 // ==========================================
+
+// Force scroll to top on page load
+window.addEventListener('DOMContentLoaded', () => {
+    window.scrollTo(0, 0);
+    window.history.scrollRestoration = 'manual';
+});
+
 const preloader = document.getElementById('preloader');
 const loaderFill = document.querySelector('.loader-fill');
 const loaderLogs = document.getElementById('loaderLogs');
@@ -22,30 +29,34 @@ const bootMessages = [
     '[OK] System ready. Welcome, root.',
 ];
 
+const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+const bootMessagesToShow = isMobile ? bootMessages.slice(0, 3) : bootMessages;
+
 let bootIndex = 0;
 let progress = 0;
 
 function simulateBoot() {
-    if (bootIndex < bootMessages.length) {
+    if (bootIndex < bootMessagesToShow.length) {
         const p = document.createElement('p');
-        p.textContent = bootMessages[bootIndex];
+        p.textContent = bootMessagesToShow[bootIndex];
         p.style.color = '#00ff41';
         p.style.fontSize = '0.65rem';
         p.style.fontFamily = 'var(--font-mono)';
         loaderLogs.appendChild(p);
         loaderLogs.scrollTop = loaderLogs.scrollHeight;
         
-        progress = ((bootIndex + 1) / bootMessages.length) * 100;
+        progress = ((bootIndex + 1) / bootMessagesToShow.length) * 100;
         loaderFill.style.width = progress + '%';
         
         bootIndex++;
-        setTimeout(simulateBoot, 300 + Math.random() * 200);
+        setTimeout(simulateBoot, isMobile ? 100 : 300 + Math.random() * 200);
     } else {
         setTimeout(() => {
             preloader.classList.add('hidden');
             document.body.style.overflow = 'auto';
+            window.scrollTo(0, 0);
             initAnimations();
-        }, 500);
+        }, isMobile ? 200 : 500);
     }
 }
 
@@ -181,19 +192,26 @@ animateParticles();
 const cursorGlow = document.getElementById('cursorGlow');
 let mouseX = 0, mouseY = 0;
 
-document.addEventListener('mousemove', (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
-    cursorGlow.style.left = mouseX - 10 + 'px';
-    cursorGlow.style.top = mouseY - 10 + 'px';
-});
+// Check if device supports hover (touch devices)
+const isTouchDevice = window.matchMedia('(hover: none)').matches || 'ontouchstart' in window;
 
-// Add hover effect to interactive elements
-const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card, .tool-item, .social-link');
-interactiveElements.forEach(el => {
-    el.addEventListener('mouseenter', () => cursorGlow.classList.add('hover'));
-    el.addEventListener('mouseleave', () => cursorGlow.classList.remove('hover'));
-});
+if (!isTouchDevice) {
+    document.addEventListener('mousemove', (e) => {
+        mouseX = e.clientX;
+        mouseY = e.clientY;
+        cursorGlow.style.left = mouseX - 10 + 'px';
+        cursorGlow.style.top = mouseY - 10 + 'px';
+    });
+
+    // Add hover effect to interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, input, textarea, .project-card, .tool-item, .social-link');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', () => cursorGlow.classList.add('hover'));
+        el.addEventListener('mouseleave', () => cursorGlow.classList.remove('hover'));
+    });
+} else {
+    cursorGlow.style.display = 'none';
+}
 
 // ==========================================
 // NAVIGATION
