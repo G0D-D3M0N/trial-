@@ -6,7 +6,7 @@
 // ==========================================
 // PRELOADER
 // ==========================================
-import { inject } from "@vercel/analytics"
+
 // Force scroll to top on page load
 window.addEventListener('DOMContentLoaded', () => {
     window.scrollTo(0, 0);
@@ -659,4 +659,5 @@ console.log('%c 💀 4EVER-ROOTED 💀 ',
 console.log('%c You found the console. Impressive.', 
     'color: #ff0040; font-size: 12px;');
 console.log('%c But remember... poking around is what we do best. 😈', 
+
     'color: #00d4ff; font-size: 12px;');
