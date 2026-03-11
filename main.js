@@ -6,7 +6,7 @@
 // ==========================================
 // PRELOADER
 // ==========================================
-
+import { inject } from "@vercel/analytics"
 // Force scroll to top on page load
 window.addEventListener('DOMContentLoaded', () => {
     window.scrollTo(0, 0);
